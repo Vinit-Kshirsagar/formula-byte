@@ -60,8 +60,8 @@ export default function TeamDriverSelector() {
 
       {driver && (
         <div>
-          <h3>{driver}</h3>
-          <p>No stats yet.</p>
+          <h3>{driver} - {team}</h3>
+          <p></p>
         </div>
       )}
     </div>
