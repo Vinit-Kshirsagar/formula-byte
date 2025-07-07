@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './homepage.css'; // This path is correct if homepage.css is in the same folder
-import mercedesLogo from "../../../assets/mercedes.png";
-import redbullLogo from "../../../assets/redbull.png";
-import ferrariLogo from "../../../assets/ferrari.png";
-import mclarenLogo from "../../../assets/mclaren.png";
+import mercedesLogo from "../../../assets/teams/mercedes.png";
+import redbullLogo from "../../../assets/teams/redbull.png";
+import ferrariLogo from "../../../assets/teams/ferrari.png";
+import mclarenLogo from "../../../assets/teams/mclaren.png";
 
 const teamLogos = {
   "Mercedes": mercedesLogo,
