@@ -1,5 +1,16 @@
 import { useState } from 'react';
 import './homepage.css'; // This path is correct if homepage.css is in the same folder
+import mercedesLogo from "../../../assets/mercedes.png";
+import redbullLogo from "../../../assets/redbull.png";
+import ferrariLogo from "../../../assets/ferrari.png";
+import mclarenLogo from "../../../assets/mclaren.png";
+
+const teamLogos = {
+  "Mercedes": mercedesLogo,
+  "Red Bull": redbullLogo,
+  "Ferrari": ferrariLogo,
+  "McLaren": mclarenLogo,
+};
 
 
 const f1Data = {
@@ -28,6 +39,15 @@ export default function TeamDriverSelector() {
         </select>
       </label>
 
+      {team && (
+  <div style={{ margin: '20px 0' }}>
+    <img
+      src={teamLogos[team]}
+      alt={`${team} Logo`}
+      style={{ width: '180px', borderRadius: '8px' }}
+    />
+  </div>
+)}
       <label>
         Driver:
         <select value={driver} onChange={(e) => setDriver(e.target.value)} disabled={!team}>
