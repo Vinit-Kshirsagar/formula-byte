@@ -11,6 +11,12 @@ body {
   color: #f2f2f2;
   padding: 40px;
   line-height: 1.6;
+   margin: 0;
+  height: 100vh;
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
 }
 
 /* Main container */
