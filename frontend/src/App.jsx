@@ -11,7 +11,17 @@ import Tracks from '@/components/pages/Tracks';
 
 function App() {
   return (
-
+<Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/teams" element={<Teams />} />
+        <Route path="/drivers" element={<Drivers />} />
+        <Route path="/tracks" element={<Tracks />} />
+       
+      </Routes>
+    </Router>
   );
 }
 
