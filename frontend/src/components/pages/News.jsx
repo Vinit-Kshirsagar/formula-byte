@@ -1,4 +1,3 @@
-// News.jsx (same for Teams, Drivers, etc.)
 export default function News() {
   return (
     <div className="page-container">
